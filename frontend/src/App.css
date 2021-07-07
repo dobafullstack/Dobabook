@@ -1,3 +1,7 @@
+body{
+  background-color: rgba(236, 236, 236, 0.698) !important;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +38,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 991px){
+  .side-bar, .sf{
+    display: none;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  i.fal.fa-search{
+    left: 25px;
   }
 }

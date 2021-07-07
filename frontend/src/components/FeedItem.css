@@ -1,0 +1,107 @@
+.feed-item{
+    background-color: white;
+    margin: 16px 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.219);
+}
+
+.feed-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feed-header .avatar-feed{
+    cursor: pointer;
+}
+
+.feed-header .name-feed{
+    font-weight: 550;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.feed-header .time-feed{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.feed-header .icon-edit-feed{
+    margin-left: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.feed-body{
+    margin: 16px 0;
+}
+
+.feed-body .content-feed{
+    font-size: 20px;
+}
+
+.feed-body .img-content-feed{
+    width: 100%;
+    cursor: pointer;
+}
+
+.feed-footer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feed-footer i{
+    font-size: 30px;
+    margin: 0 8px;
+}
+
+.feed-footer .icon-favorite{
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.feed-footer .icon-favorite:hover{
+    color: #FA383E;
+}
+
+.icon-favorite.active{
+    color: #FA383E;
+}
+
+.feed-footer .icon-like{
+    color: gray;
+    cursor: pointer;
+}
+
+.feed-footer .icon-like:hover{
+    color: #2d88ff;
+}
+
+.icon-like.active{
+    color: #2d88ff;
+}
+
+.feed-footer span{
+    font-size: 18px;
+}
+
+.feed-footer .count-like-span{
+    cursor: pointer;
+}
+
+.feed-footer .count-like-span:hover{
+    text-decoration: underline;
+}
+
+.feed-footer .count-comment-span{
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.feed-footer .count-comment-span:hover{
+    text-decoration: underline;
+}

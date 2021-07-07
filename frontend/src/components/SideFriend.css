@@ -1,0 +1,65 @@
+.sf-wrapper {
+    position: fixed;
+    top: 60px;
+    overflow-y: hidden;
+    height: 100%;
+}
+
+.sf-wrapper:hover {
+    overflow-y: auto;
+}
+
+.sf-header {
+    display: flex;
+    align-items: center;
+}
+
+.sf-header .icon-gift {
+    flex-grow: 2;
+    font-size: 45px;
+    margin-right: 16px;
+    color: red;
+}
+
+.sf-promotion .img-promotion {
+    border-radius: 10px;
+}
+
+.sf-list-online strong {
+    text-align: start;
+}
+
+.online-item {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.online-item:hover {
+    background-color: rgba(128, 128, 128, 0.315);
+}
+
+.online-item img {
+    margin-right: 10px;
+}
+
+.online-item picture {
+    position: relative;
+}
+
+.online-item picture::after {
+    content: "\00a0";
+    white-space: pre;
+    background: green;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -2px;
+    left: 27px;
+    border: 2px solid white;
+}
