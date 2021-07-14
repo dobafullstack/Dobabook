@@ -1,0 +1,51 @@
+.login-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    
+}
+
+.form-login {
+    background-color: white;
+    padding: 16px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-login form {
+}
+
+.input-rounded {
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.input-rounded:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.form-login form button {
+    border-radius: 15px;
+}
+
+.form-login form a{
+    text-decoration: none;
+}
+
+.title-login{
+    color: #2d88ff !important;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: start;
+}
+
+.description-login{
+    color: black !important;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+}

@@ -2,13 +2,16 @@ import React from "react";
 import { Col, Row } from "reactstrap";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import {useSelector} from 'react-redux'
 
 export default function Navbar() {
+    const user = useSelector(state => state.auth.user)
+
     return (
         <nav className='wrapper'>
             <Row>
                 <Col xl={3} lg={3} md={3} sm={3} xs={3} className='nav-brand'>
-                    <Link to='/'>DobaBook</Link>
+                    <Link to='/home'>DobaBook</Link>
                 </Col>
                 <Col xl={3} lg={3} md={3} sm={3} xs={3} className='nav-search'>
                     <a href='#'>
@@ -30,7 +33,7 @@ export default function Navbar() {
                         <i class='fas fa-user'></i>
                         <span className='badge-noti'>2</span>
                     </a>
-                    <a href='#'>
+                    <a>
                         <Link to='/message'>
                             <i class='fas fa-comment-alt-lines'></i>
                         </Link>
@@ -44,10 +47,10 @@ export default function Navbar() {
                 <Col xl={3} lg={3} md={3} sm={3} xs={3} className='nav-avatar'>
                     <Link to='/profile'>
                         <img
-                            className='rounded'
-                            src='https://hook.finance/sites/default/files/user.png'
+                            src={user.avatar}
                             height='40'
                             alt='avatar'
+                            style={{borderRadius: '50%'}}
                         />
                     </Link>
                 </Col>

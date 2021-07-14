@@ -1,17 +1,20 @@
 import React from 'react'
 
-export default function OnlineFriendItem() {
+export default function OnlineFriendItem({friend}) {
     return (
         <div className='online-item'>
             <picture>
                 <img
                     className='online-avatar'
-                    src='https://hook.finance/sites/default/files/user.png'
+                    src={friend.avatar}
                     width='40'
                     alt='avatar'
+                    style={{
+                        borderRadius: '50%'
+                    }}
                 />
             </picture>
-            <strong className='online-name'>Duy Anh</strong>
+            <strong className='online-name'>{friend.name}</strong>
         </div>
     );
 }

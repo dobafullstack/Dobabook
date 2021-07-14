@@ -54,7 +54,7 @@
 .online-item picture::after {
     content: "\00a0";
     white-space: pre;
-    background: green;
+    background: #42b72a;
     position: absolute;
     width: 15px;
     height: 15px;

@@ -1,10 +1,8 @@
 .status-wrapper {
     background-color: white !important;
-    margin-top: 10px;
     border-radius: 10px;
     box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.219);
     padding: 8px 16px;
-    margin-top: 65px;
 }
 
 .status-top {
@@ -15,6 +13,7 @@
 .status-top img {
     width: 48px;
     margin-right: 16px;
+    border-radius: 50%;
 }
 
 .status-top input {
@@ -45,11 +44,11 @@
     font-size: 18px;
 }
 
-.text-photo{
-    color: #00A400 !important;
+.text-photo {
+    color: #42b72a !important;
 }
 
-.text-tag{
+.text-tag {
     color: blue;
 }
 
@@ -57,14 +56,52 @@
     color: rgb(195, 20, 20);
 }
 
-.text-feelings{
+.text-feelings {
     color: goldenrod;
 }
 
-.btn-share{
+.btn-share {
     border: none;
     outline: none;
     background-color: green;
     color: white;
     padding: 4px 8px;
+}
+
+.lf-title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: start;
+}
+
+.group-lf {
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.219);
+}
+
+.lf-item {
+    cursor: pointer;
+}
+
+.lf-item img {
+    border-radius: 10px;
+}
+
+.btn-share {
+    background-color: #42b72a;
+    border-color: #42b72a;
+}
+
+.btn-share:focus {
+    border-color: #42b72a;
+    background-color: #42b72a;
+    outline: none;
+    box-shadow: none;
+}
+
+.img-wrapper img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
